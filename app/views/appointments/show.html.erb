@@ -1,0 +1,7 @@
+<h1>Appointment#show</h1>
+<p>Find me in app/views/appointment/show.html.erb</p>
+<ul>
+<li> <%= @appointment.format_datetime %> </li>
+<li> <%= link_to "#{@appointment.patient.name}", patient_path(@appointment.patient)%> </li>
+<li> <%= link_to "#{@appointment.doctor.name}", doctor_path(@appointment.doctor)%> </li>
+
